@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="400" height="200" viewBox="0 0 400 200">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        font-size: 9px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: "Myriad Pro";
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="artboard-1">
+    <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAMAAABlASxnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVVa6BVa6C73d08d3c8d3dVa6BVaqBWbKG63Ny73t273d283d09eHg7d3c8d3e/yubZ2dlAQEAAAACX62eHAAAABXRSTlPs9fX17O2PwGoAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAABX0lEQVR42u3duw2DUBREwccfY8Cm/2YdWCYjeAJfJJhTwAbTwKZU/K3mW9v1j+FXeWjr7LMfp3mr6qDq1AQ0BDQHBCsHq9hvcResChYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLDOxwqwugqWf8MsLDejGTejr4DeAS0BwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYsWLBgwYIF63SsDx0wrO7oGz9oAAAAAElFTkSuQmCC" width="300" height="200"/>
+    <text transform="translate(106 23) scale(2)" class="cls-1"><tspan class="cls-2">187,221,221</tspan></text>
+    <text transform="translate(208 23) scale(2)" class="cls-1"><tspan class="cls-2">60,119,119</tspan></text>
+    <text transform="translate(11 23) scale(2)" class="cls-1"><tspan class="cls-2">85,107,160</tspan></text>
+    <text transform="translate(4 122) scale(2)" class="cls-1"><tspan class="cls-2">191,202,230</tspan></text>
+    <text transform="translate(106 122) scale(2)" class="cls-1"><tspan class="cls-2">217,217,217</tspan></text>
+    <text transform="translate(214 122) scale(2)" class="cls-1"><tspan class="cls-3">64,64,64</tspan></text>
+  </g>
+</svg>
