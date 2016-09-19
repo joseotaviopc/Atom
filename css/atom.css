@@ -1,321 +1,281 @@
-/* --------------------
-      COMUM
--------------------- */
-  
+/*----------FONTES----------*/
+
   @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway-Thin.ttf") format("truetype");
+    font-weight: 100; }
 
-  body, html {
+  @font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway-Thin-Regular.ttf") format("truetype");
+    font-weight: 400; }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+    font-weight: 600; }
+
+/*----------BASICO----------*/
+  /*----------CORES----------
+
+  AZUL PRINCIPAL
+  #4183d7
+
+  AZUL ESCURO
+  #286abd
+
+  CINZA ESCURO
+  #484848
+
+  CINZA CLARO
+  #EEE
+
+  */
+  * {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    box-sizing: border-box; }
+
+  html, body {
+    background-color: #EEE;
+    color: #484848;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 135%;
+    text-rendering: optimizeLegibility; }
+
+  ul,li {
+    list-style-type: none;
   }
 
-  body {
-    font-family: Roboto, Sans-serif;
-    font-size: 14px;
-    background-color: rgb(236,240,241);
-    color: rgb(64,64,64);
-  }
-
-  h1, h2, h3, h4, h5 {
-    margin: 0; 
-  }
-
-  header, nav, main, footer, section, article, div {
-    box-sizing: border-box;
-    /*border: 1px dashed #666; */
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  a, a:hover, a:focus, a:visited, a:active {
-    text-decoration: none;
-  } 
+/*----------COMPONENTES----------*/ 
+  .row {
+    width: 96%;
+    margin: 0 auto; }
   
-/* --------------------
-      FLEX
--------------------- */
-
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .flexcont {
-    flex: 0 1 auto;
-  }
-
-/* --------------------
-      MENU
--------------------- */
-
-  .menu {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: rgb(60, 119, 119);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  }
-
-  .nav {
-    font-size: 1.2em;
-    text-align: center;
-    padding: 0 0.5em;
-    text-transform: uppercase;
-  }
-  .nav li {
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: -ms-inline-flex;
-    display: -o-inline-flex;
-    display: inline-flex;
-  /*  border: 1px dashed #fff; */
-  }
-
-  .nav a {
-    text-decoration: none;
-    color: #D9D9D9;
-    padding: 0.8em;
-  }
-
-  .nav a:hover {
-    color: #FFF;
-  }
-
-  .cont {
-    margin: 1em auto;
-    text-align: center;
-    font-size: 2.5em;
-    color: #404040;
-    text-shadow: 2px 2px #EEE;
-  }
-
-/* --------------------
-      BLOCOS
--------------------- */
-
-  .bloco {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5%;
-    width: 100%;
-    min-height: 200px;
-  }
-
-  /* --------------------
-        BLOCOS BRANCOS
-        Chamada
-        Como Funcions
-        Depoimentos
-        Sobre Nós
-  -------------------- */
-
-  .claro {
-    background-color: #FFF;
-  }
-
-  /* --------------------
-        BLOCOS VERDES
-        Aprender
-        Planos
-        Imprensa
-  -------------------- */
-
-  .escuro {
-    background-color: rgb(187, 221, 221);
-    color: rgb(60, 119, 119);
-  }
-
-  /* --------------------
-        BLOCOS NEUTRO
-        Simulador
-  -------------------- */
-
-  .neutro {
-    background: rgba(217,217,217,0.5);
-    color: rgb(187, 221, 221);
-  }
-
-/* --------------------
-      PRINCIPAL
--------------------- */
-
-  .principal {
-    background-color: #000;
-    background-image: linear-gradient(rgba(0,0,0,0.5) 10%,rgba(0,0,0,.1) 60%), url(../img/chamada-equipe-sml.jpg);
-    background-repeat: no-repeat;
-    /*background-size: contain;*/
-    background-position: center bottom;
-    background-attachment: fixed;
-    /*padding: 5em 0 0 0;*/
-    height: 110vh;
-    width: 100%;
-  }
-
-  .principal .center {
-    margin: 20vh auto;
-  }
-
-/* --------------------
-      NEWSLETTER
-      SOBRE
-      DEPOIMENTOS
--------------------- */
-
-  .newsletter {
-    background-color: rgb(187, 221, 221);
-    color: rgb(60, 119, 119);
-  }
-
-  .depoimentos, .sobre {
-    color: rgb(64, 64, 64);
-  }
-
-  .depoimentos .box, .sobre .box {
-    flex: 0 1 auto;
-    align-items: flex-end;
-    width: 30%;
-  }
-
-  .depoimentos h1, .sobre h1, .simulador h1, .principal h1, .como h1 {
-    margin: 1em auto;
-    font-size: 2.5em;
-    color: rgba(60, 119, 119, 1);
-    text-shadow: 2px 2px 5px rgba(60, 119, 119, 0.15);
-  }
-
-  .sobre p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-  }
-
-  .depoimentos p {
-    font-size: 1.5em;
-    font-weight: 400;
-  }
-
-  .depoimentos blockquote {
-    font-size: 1.2em;
-    line-height: 1.6em;
-  }    
-
-/* --------------------
-      IMPRENSA
-      PLANOS
--------------------- */
-
-  .imprensa, .planos {
-    background-color: rgb(187, 221, 221);
-    color: rgb(60, 119, 119);
-  }
-
-  .imprensa h1, .planos h1, .newsletter h1{
-    color: rgba(60, 119, 119, 1);
-    margin: 0 0 1em 0;
-    text-align: center;
-    /*margin: 3em 0;*/
-    font-size: 2.5em;
-    text-shadow: 2px 2px 5px rgba(60, 119, 119, 0.15);
-  }
-
-  .imprensa a {
-
-    min-height: 48px;
-  }
-  .imprensa img {
-    width: 15%;
-    min-width: 100px;
-    margin: 0 2% 5% 2%;
-    border: 1px solid rgba(60, 119, 119, 0.3);
-    border-radius: 0.5em;
-    box-shadow: 2px 2px 10px rgba(60, 119, 119, 0.3);
-  }
-
-  .planos  .box {
-    flex: 0 1 auto;
-    align-items: flex-end;
-    width: 30%;
-  }
-
-/* --------------------
-      RODAPE
--------------------- */
-
-  .rodape {
-    letter-spacing: 0.05em;
-    line-height: 1.25em;
-    font-weight: 300;
-    background-color: rgb(64, 64, 64);
-    color: rgba(217, 217, 217, 0.8);
-  }
-
-  .rodape h3 {
-    color: rgba(217, 217, 217, 1);
-    margin: 0 0 1em 0;
-    text-align: center;
-  }
-
-  .rodape ul {
-    margin: 0 10%;
-  }
-
-  .rodape li {
-    margin-bottom: 0.5em;
-  }
-
-  .rodape a,.rodape a:active,.rodape a:focus,.rodape a:visited {
-    color: rgba(217, 217, 217, 0.8);
-  }
-
-  .rodape a:hover {
-    color: rgba(217, 217, 217, 0.3);
-  }
-
-  .rodape .box {
-    min-width: 10em;
-    width: 25%;
-    margin: 2em 0 3em 0;
-  }
-
-  .rodape .disclaimer {
-    font-size: 0.85em;
-    line-height: 1.2em;
-    width: 80%;
+  .center {
     margin: 0 auto;
+    text-align: center;
   }
 
-  .fa {
-    padding: 0 0.5em;
+  hr {
+    display: block;
+    height: 0px;
+    border: 1px solid #4183d7;
+    opacity: 0.7;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
   }
 
-.center {
+/*----------TITULOS----------*/
+  h1, h2, h3, h4 {
+    margin: 1.4em 0 0.8em 0;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    text-transform: uppercase; }
+
+  h1 {
+    font-size: 240%;
+    color: #4183d7; }
+
+  h2 {
+    font-size: 180%;
+    color: #4183d7;
+  }
+
+  h3 {
+    font-size: 140%;
+    color: #286abd;
+  }
+
+  h4 {
+    font-size: 120%;
+    color: #286abd;
+  }
+
+/*----------BOTOES----------*/
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    padding: 0.4em 1.2em;
+    text-decoration: none;
+    border-radius: 0.6em;
+    border: 1px solid #4183d7;
+    color: #fff;
+    letter-spacing: 0.1em;
+    transition: all 0.2s; }
+
+  .btn-vazio:link,
+  .btn-vazio:visited {
+    color: #4183d7; }
+
+  .btn-cheio:link,
+  .btn-cheio:visited {
+    background-color: #4183d7; }
+
+  .btn:hover,
+  .btn:active {
+    background-color: #286abd; }
+
+  .btn-vazio:hover,
+  .btn-vazio:active {
+    color: #fff;
+    border: 1px solid #286abd; }
+
+  .btn-cheio:hover,
+  .btn-cheio:active {
+    background-color: #286abd;
+    border: 1px solid #286abd; }
+
+/*----------CHAMADA----------*/
+  header {
+    height: 100vh;
+    background-color: #EEE;
+    background-image: linear-gradient(rgba(55, 109, 165, 1), rgba(55, 109, 165, 0.3)), url(img/chamada-equipe-sml-2.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #eee; }
+
+  .chamada-texto {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 100; }
+
+  .chamada-texto h1 {
+    color: #EEE;
+  }
+
+/*----------MENU----------*/
+  .menu-header {
+    position: relative; }
+
+/*----------MENU ICON----------*/
+  .menu-header i {
+    color: #CCC;
+    font-size: 250%;
+    float: right;
+    padding: 0.3em;
+    transition: all 0.2s; }
+
+  .menu-header i:hover {
+    color: #EEE; }
+
+  .logo {
+    height: 4.5em;
+    width: auto;
+    float: left;
+    position: absolute; }
+
+/*----------MENU LISTA----------*/
+  .menu {
+    display: none;
+    width: 35%;
+    float: right;
+    background-color: transparent;
+    z-index: 1; }
+
+  .menu li {
+    padding: 0.5em 1.5em;
+    list-style: none;
+    text-align: right;
+    border-bottom-left-radius: 0.6em;
+    border-top-left-radius: 0.6em;
+    transition: all 0.3s; }
+
+  .menu li:hover {
+    background-color: #286abd; }
+
+  .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #eee; }
+
+/*----------COMO FAZER----------*/  
+
+  .como-fazer h2,
+  .como-fazer h3 {
+    text-align: center;
+  }
+
+  .como-fazer-itens li {
+    list-style: none;
+    margin: 0.3em 0;
+  }
+
+  .como-fazer .dest {
+    font-weight: 600;
+  }
+  .como-fazer i {
+    padding-right: 0.5em;
+  }
+
+  .como-fazer p {
+    margin: 0.8em 0;
+    font-size: 80%;
+  }
+
+  .como-fazer a {
+    margin: 0 auto;
+    border: 1px solid gray;
+  }
+
+  .como-fazer .obs {
+    font-size: 70%;
+    line-height: 120%;
+    margin-top: 1.4em;
+  }
+
+  h3 i {
+    font-size: 1.6em;
+  }
+
+/*----------PLANOS----------*/ 
+
+  .planos {
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #E8E8E8;
+    background: linear-gradient(rgba(65, 131, 215, 0.15), rgba(65, 131, 215, 0.05));
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .planos p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .planos .center {
+    padding: 1.2em 0;
+  }
+
+  .planos p .dest {
+    display: block;
+    padding-top: 1em;
+  }
+
+/*----------DEPOIMENTOS----------*/ 
+
+blockquote {
+  font-size: 150%;
+  line-height: 120%;
   text-align: center;
-  margin: 0 auto;
 }
 
-
-/* --------------------
-      COMENTARIOS
--------------------- */
-
-.coment {
-  margin: 0 4%;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-}
-
+/* .row,
+.col {
+  border: 1px dashed gray;
+} */

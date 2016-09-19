@@ -1,0 +1,60 @@
+/* ==============================
+		FONTES
+============================== */
+	
+	@font-face {
+	font-family: 'Raleway';
+	src: url("../fonts/Raleway-Thin.ttf") format("truetype");
+	font-weight: 100; }
+
+	@font-face {
+	font-family: 'Raleway';
+	src: url("../fonts/Raleway-Thin-Regular.ttf") format("truetype");
+	font-weight: 400; }
+
+	@font-face {
+	font-family: 'Raleway';
+	src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+	font-weight: 600; }
+
+/* ==============================
+		BASICO
+============================== */		
+
+	// Azul Claro DESTAQUE
+
+	$cor-pri: #4183d7;
+
+	// Azul Escuro
+
+	$cor-sec: #286abd;
+
+	// Cinza Escuro
+
+	$cor-esc: #484848;
+
+	// Cinza Claro
+
+	$cor-cla: #EEE;
+
+	// Tamanho da fonte
+
+	$fon-base: 16px;
+	$pp: 80%;
+	$p: 90%;
+	$m: 120%;
+	$g: 150%;
+	$gg: 180%;
+	$xg: 240%;
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html,body {
+		background-color: $cor-cla;
+		color: $cor-esc;
+		
+	}

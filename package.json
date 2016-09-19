@@ -1,0 +1,27 @@
+{
+  "name": "atom",
+  "version": "1.0.0",
+  "description": "Redesign Atom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseotaviopc/Atom.git"
+  },
+  "keywords": [
+    "Atom",
+    "Redesign"
+  ],
+  "author": "carvalho.jose@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseotaviopc/Atom/issues"
+  },
+  "homepage": "https://github.com/joseotaviopc/Atom#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1"
+  }
+}

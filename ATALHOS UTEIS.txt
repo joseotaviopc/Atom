@@ -1,0 +1,10 @@
+ATALHOS UTEIS
+
+CMD + T = Find file
+CMD + R (@) = Find symble
+CMD + Alt + G = Find next
+TAB = auto complete
+Alt + select with mouse = Mult Select
+With some selection + CMD + D = Add next instance
+CMD + Ctrl + D = select all instances
+CMD + Shift + C = color picker

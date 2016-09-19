@@ -1,0 +1,29 @@
+/* ==============================
+		FONTES
+============================== */
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100; }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Thin-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600; }
+
+/* ==============================
+		BASICO
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  background-color: #EEE;
+  color: #484848; }
